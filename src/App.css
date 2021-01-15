@@ -1,0 +1,261 @@
+.App {
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+.img1 {
+  height: auto;
+  max-width: 70%;
+  top: 200px;
+  right: -100px;
+  z-index: 199;
+  position: relative;
+  -webkit-box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.img2 {
+  height: auto;
+  max-width: 70%;
+  right: 65px;
+  bottom: 210px;
+  z-index: 5;
+  position: relative;
+  -webkit-box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.img1:hover,
+.img2:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: 10px 9px 7px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 9px 7px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 9px 7px 0px rgba(0, 0, 0, 0.75) 10;
+}
+.img1:hover .vinisce {
+  color: red !important;
+}
+
+.mainDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.apartmentCarousel {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.imgCarousel,
+.imgCarousel2 {
+  width: 100%;
+  height: 100%;
+
+  transition: all 0.5s ease-in-out;
+}
+.prevNext {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 100%;
+  color: white;
+  font-size: 2rem;
+}
+.prevNext::active {
+  outline: none;
+  border: none;
+}
+
+/*     third party carousel      */
+.carousel-root {
+  width: 64% !important;
+  margin: auto !important;
+  margin-top: 3% !important;
+  margin-bottom: 3% !important ;
+}
+
+.carousel .slide {
+  background-color: #f2f2f2 !important;
+  color: black;
+  height: 100%;
+}
+/* 
+.carousel .slide img {
+  width: 100% !important;
+  height: 100% !important;
+} */
+
+.myCarousel {
+  background-color: transparent;
+  margin-top: 0;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6%;
+  padding-bottom: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 1px solid #ddd;
+  height: 286px;
+}
+
+.carousel .control-dots {
+  padding-left: 5px !important;
+  outline: 0;
+  bottom: 7% !important;
+}
+
+.myCarousel h3 {
+  color: #222;
+  font-weight: 100;
+  letter-spacing: 0.2px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+.myCarousel h4 {
+  text-transform: uppercase;
+  margin-top: 0;
+  padding-top: 0;
+  font-weight: 500;
+  color: #787878;
+  font-size: 14px;
+}
+
+.myCarousel p {
+  font-weight: 100 !important;
+  line-height: 29px !important;
+  color: #222;
+  font-size: 18px;
+  font-family: sans-serif;
+  max-height: 67px;
+}
+
+.myCarousel p:before {
+  content: '“';
+  color: #aaa;
+
+  font-size: 26px;
+  font-family: monospace;
+  font-weight: 100;
+}
+
+.myCarousel p:after {
+  content: '”';
+  color: #aaa;
+  font-size: 26px;
+  font-family: monospace;
+  font-weight: 100;
+  line-height: 0;
+}
+
+.carousel .control-dots .dot {
+  box-shadow: none !important;
+  background: #454545 !important;
+  outline: 0;
+}
+
+.carousel.carousel-slider .control-arrow {
+  /* background: #000 !important; */
+  height: 250px !important;
+  width: 50px;
+  position: absolute;
+  top: 35% !important;
+}
+
+@media only screen and (max-width: 934px) {
+  .carousel-root {
+    outline: 0;
+    width: 93% !important;
+    margin: auto !important;
+  }
+
+  /* .carousel.carousel-slider .control-arrow {
+    display: none !important;
+  } */
+  .myCarousel {
+    background: #fafafa;
+    margin-top: -9%;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8%;
+    padding-bottom: 12.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 1px solid #ddd;
+    height: 269px;
+  }
+
+  .carousel .slide img {
+    width: 100% !important;
+  }
+}
+.h1Landing {
+  transform: scale(2);
+  margin: 0;
+}
+@media screen and (max-width: 1109px) {
+  .img1 {
+    height: auto;
+    width: 80%;
+    position: static;
+    margin-bottom: 30px;
+  }
+
+  .img2 {
+    height: auto;
+    width: 80%;
+    position: static;
+  }
+  .mainDiv {
+    display: block;
+  }
+  .imgDiv {
+    flex: flex;
+  }
+  .carouselWraper {
+    flex-direction: column;
+  }
+  .paperDiv {
+    margin-bottom: 100px;
+  }
+  .h1Landing {
+    transform: scale(1.5);
+  }
+}
+@media screen and (max-width: 800px) {
+  .apartmentCarousel {
+    width: 100%;
+  }
+  .h1Landing {
+    transform: scale(1);
+  }
+  /* * {
+    font-size: 0.5rem;
+  } */
+}
+@media screen and (max-width: 450px) {
+  .h1Landing {
+    transform: scale(2);
+  }
+  * {
+    font-size: 0.9rem;
+  }
+}
